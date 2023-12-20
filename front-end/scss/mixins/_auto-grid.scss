@@ -1,0 +1,27 @@
+@mixin auto-grid($min-width: null, $gap: $grid-gutter-width) {
+    @if variable-exists(min-width) {
+        & > * {
+            max-width: $min-width;
+        }
+
+        & > * + * {
+            margin-top: $gap;
+        }
+
+        @supports (display: grid) {
+            & {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax($min-width, 1fr));
+                grid-gap: $gap;
+            }
+
+            & > * {
+                max-width: unset;
+            }
+
+            & > * + * {
+                margin-top: unset;
+            }
+        }
+    }
+}

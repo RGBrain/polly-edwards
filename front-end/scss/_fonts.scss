@@ -1,0 +1,17 @@
+/*-------------------------------------------------*\
+    FONTS
+
+    Use this file to declare any font-related
+    declarations.
+
+    For example, @font-face rules or @imports
+    for fonts hosted elsewhere.
+\*-------------------------------------------------*/
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url('../fonts/ProximaNova-Light.otf') format('opentype');
+    font-weight: $font-weight-light;
+    font-style: normal;
+    font-display: swap;
+}

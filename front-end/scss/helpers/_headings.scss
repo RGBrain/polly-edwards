@@ -1,0 +1,29 @@
+%h1 {
+    @include fluid-type(sm, xxl, 70px, 90px);
+
+    font-weight: $font-weight-headings;
+}
+
+%h2 {
+    @include fluid-type(sm, xxl, 30px, 40px);
+
+    font-weight: $font-weight-headings;
+}
+
+%h3 {
+    @include fluid-type(sm, xxl, 20px, 30px);
+
+    font-weight: $font-weight-headings;
+}
+
+%h4 {
+    @include fluid-type(sm, xxl, 18px, 28px);
+
+    font-weight: $font-weight-headings;
+}
+
+%h5 {
+    @include fluid-type(sm, xxl, 16px, 22px);
+
+    font-weight: $font-weight-headings;
+}

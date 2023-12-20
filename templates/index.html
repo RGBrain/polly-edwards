@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{siteName}} | {{entry.title}}</title>
+    <link rel="stylesheet" href="/assets/css/app.css">
+</head>
+
+<body>
+        <div class="d-flex justify-content-center gap-4 p-3">
+            <a class="text-grey-400"  href="#">{% include "svg/facebook.svg" %}</a>
+            <a class="text-grey-400" href="#">{% include "svg/youtube.svg" %}</a>
+            <a class="text-grey-400" href="#">{% include "svg/tiktok.svg" %}</a>
+            <a class="text-grey-400" href="#">{% include "svg/instagram.svg" %}</a>
+        </div>
+
+
+        <div class="about"></div>
+        <div class="about"></div>
+        
+        
+        <h1 class="home justify-content-center">{{entry.mainTitle}}</h1>
+
+        <h4 class="home">{{entry.introduction}}</h4>
+        
+
+        <!-- ! Remove before build -->
+    <div class="breakpoint-helper"></div>
+</body>
+
+</html>

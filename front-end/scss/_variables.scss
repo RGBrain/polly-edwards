@@ -1,0 +1,187 @@
+/*-------------------------------------------------*\
+    VARIABLES
+
+    Use this file to declare variables.
+
+    You can create your own variables or override
+    Bootstrap variables.
+\*-------------------------------------------------*/
+
+///////////////////////////////////////////
+// TYPOGRAPHY
+///////////////////////////////////////////
+
+// Families
+$font-family-sans-serif: "Proxima Nova", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-headings: $font-family-sans-serif;
+
+// Font weights
+$font-weight-light: 300;
+$font-weight-normal: 400;
+// $font-weight-semibold: 600;
+$font-weight-bold: 700;
+// $font-weight-heavy: 800;
+
+// Headings 
+$margin-bottom-headings: 0;
+$font-weight-headings: $font-weight-bold;
+$line-height-headings: 1.3;
+
+// Paragraphs
+$paragraph-margin-bottom: 0;
+
+// Misc
+$line-height-base: 1.5;
+$link-hover-decoration: none;
+
+///////////////////////////////////////////
+// COLORS
+///////////////////////////////////////////
+
+// Brand colours
+$green-100: #d7df23;
+$green-200: #1c9844;
+$purple: #3f085c;
+$black: #1e1e1e;
+$white: #ffffff;
+$grey-100: #f5f2f6;
+$grey-200: #d8d8d8;
+$grey-400: #646161;
+
+$body-color: $black;
+$body-bg: $grey-100;
+
+// Gradients
+$purple-green-gradient: linear-gradient(135deg, rgba($purple,1) 20%, rgba($green-200, 1) 60%, rgba($green-100,1) 100%);
+$purple-green-gradient-90: linear-gradient(135deg, rgba($purple, 0.9) 20%, rgba($green-200, 0.9) 60%, rgba($green-100, 0.9) 100%);
+
+$white-opacity: rgba($white, var(--bs-bg-opacity));
+$purple-opacity: rgba($purple, var(--bs-bg-opacity));
+
+///////////////////////////////////////////
+// METRICS
+///////////////////////////////////////////
+
+// Spacing
+$spacer: 30px;
+$grid-gutter-width: 30px;
+
+$spacers: (
+  0: 0,
+  1: $spacer * .25, // 7.5
+  2: $spacer * .5, // 15
+  3: $spacer, // 30
+  4: $spacer * 1.5, // 45
+  5: $spacer * 3, // 90
+  6: $spacer * 4, // 120
+  7: $spacer * 5, // 150
+  8: $spacer * 6, // 180
+  9: $spacer * 7, // 210
+  10: $spacer * 8 // 240
+);
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 1048px,
+    xl: 1200px,
+    xxl: 1430px,
+    xxxl: 1920px,
+    xxxxl: 2400px
+);
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1200px,
+    xxl: 1430px
+);
+
+// Border radii
+$border-radius-sm: 5px;
+$border-radius: 20px;
+$border-radius-lg: 40px;
+
+///////////////////////////////////////////
+// MISC
+///////////////////////////////////////////
+
+$stretched-link-pseudo-element: before;
+$enable-negative-margins: true;
+
+$min-mobile-height: 750px;
+$max-mobile-height: 950px;
+$max-laptop-height: 1100px;
+
+$box-shadow: 2px 5px 5px 0px;
+
+
+///////////////////////////////////////////
+// COMPONENTS
+///////////////////////////////////////////
+
+// Header
+$header-breakpoint: xl;
+
+// Hero
+$hero-breakpoint: xl;
+
+// Buttons
+$input-btn-font-family: $font-family-sans-serif;
+$input-btn-padding-x: 1.25rem; // 20px
+$input-btn-padding-y: 10.44px;
+$input-btn-font-size: 1.13rem; // 18px
+$btn-font-weight: $font-weight-bold;
+$btn-disabled-opacity: 0.5;
+$btn-border-width: 2px;
+
+// Forms
+$focus-ring-opacity: 0.5;
+$focus-ring-color: rgba($green-100, $focus-ring-opacity);
+$input-border-color: $purple;
+$input-border-radius: $border-radius-sm;
+$input-padding-y: 15px;
+$input-bg: $white;
+$form-label-color: $black;
+$form-label-font-weight: $font-weight-bold;
+$form-label-margin-bottom: 10px;
+$form-select-bg-size: 22px 17px;
+$form-select-font-size: 1rem;
+$form-select-padding-y: 16.5px;
+$form-check-label-color: $black;
+$form-check-input-bg: transparent;
+$form-check-input-border: 1px solid $purple;
+$form-check-input-border-radius: 2px;
+$form-check-input-width: 1.5em;
+$form-check-input-width-sm: 1em;
+$form-check-input-checked-bg-color: $purple;
+$form-check-input-checked-border-color: $purple;
+$form-check-input-checked-color: $white;
+$form-check-input-checked-bg-image: url("data:image/svg+xml,<svg viewBox='0 0 22 22' xmlns='http://www.w3.org/2000/svg' fill='none'><polyline stroke='#{$form-check-input-checked-color}' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' transform='translate(11.428138, 11.000000) scale(-1, 1) rotate(-180.000000) translate(-11.428138, -11.000000)' points='15.8562762 14 9.85627618 8 7 10.8562315'></polyline></svg>");
+$form-check-radio-checked-bg-image: url("data:image/svg+xml,<svg viewBox='0 0 22 22' xmlns='http://www.w3.org/2000/svg' fill='none'><polyline stroke='#{$form-check-input-checked-color}' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' transform='translate(11.428138, 11.000000) scale(-1, 1) rotate(-180.000000) translate(-11.428138, -11.000000)' points='15.8562762 14 9.85627618 8 7 10.8562315'></polyline></svg>");
+
+// Cards
+$card-border-color: $purple;
+$card-shadow: 0px 10px 66px -20px;
+
+// Hamburger
+$hamburger-padding-x: 0;
+$hamburger-padding-y: 0;
+$hamburger-layer-min-width: 20px;
+$hamburger-layer-max-width: 28px;
+$hamburger-layer-height: 2px;
+$hamburger-layer-spacing: 5px;
+$hamburger-layer-color: $white;
+$hamburger-layer-border-radius: 4px;
+$hamburger-hover-opacity: 1;
+$hamburger-active-layer-color: $white;
+$hamburger-active-hover-opacity: $hamburger-hover-opacity;
+$hamburger-breakpoint: xl;
+
+// HR
+$hr-opacity: 1;
+
+// Footer
+$footer-breakpoint: xl;

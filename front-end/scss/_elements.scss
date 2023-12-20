@@ -1,0 +1,61 @@
+/*-------------------------------------------------*\
+    ELEMENTS
+
+    Use this file to assign styles to HTML elements,
+    e.g. html, body, p, a, etc.
+
+    Do not abuse this file. It's not a dumping
+    ground for rules you can't be bothered to
+    create a proper component for!
+\*-------------------------------------------------*/
+
+:root {
+    @each $breakpoint, $value in $grid-breakpoints {
+        @include media-breakpoint-only(#{$breakpoint}) {
+            --breakpoint: #{$breakpoint};
+        }
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    scroll-padding-top: 100px;
+}
+
+body {
+    @include fluid-type(sm, xxl, 14px, 16px);
+
+    &:after {
+        display: none;
+        
+        @each $breakpoint, $value in $grid-breakpoints {
+            @include media-breakpoint-up(#{$breakpoint}) {
+                content: "#{$breakpoint}";
+            }
+        }
+    }
+}
+
+ul,
+ol,
+figure,
+address {
+    margin-bottom: 0;
+}
+
+main {
+    min-height: 50vh;
+}
+
+:focus:not(:focus-visible) {
+    outline: none;
+}
+
+:focus-visible:not(input):not(textarea):not(select):not(.dropdown__link) {
+    outline: 2px dashed $green-100 !important;
+    outline-offset: 2px;
+}
