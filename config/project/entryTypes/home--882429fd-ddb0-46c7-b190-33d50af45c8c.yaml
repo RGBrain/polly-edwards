@@ -1,0 +1,71 @@
+fieldLayouts:
+  ac4d794b-1a8d-41bb-b520-b09eb09ae858:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: 'Polly Edwards'
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 58cd9c5d-03d3-40dd-8581-f47b43436be6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8e103d5e-81c2-4a5c-b927-f577c73d2c65 # Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 41fe3d18-ca96-44a8-9f94-2dfef25f3050
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: faff8b18-84ef-4767-a27d-3debd81f5dcf # Introduction
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 29ca9c73-43fb-4090-84f2-facb1fe3d056
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c1ac4818-cc4e-419d-87e8-bf73d1289f15
+        userCondition: null
+handle: home
+hasTitleField: true
+name: Home
+section: d2beb882-0ee5-4c50-925d-14cff94304fe # Home
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

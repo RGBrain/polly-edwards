@@ -1,0 +1,27 @@
+dateModified: 1703006747
+email:
+  fromEmail: richard.brain@hotmail.co.uk
+  fromName: pollyedwardsmusic
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    8e103d5e-81c2-4a5c-b927-f577c73d2c65: Title # Title
+    40781a1b-9971-494e-81b3-2989d8e1cbc6: Common # Common
+    882429fd-ddb0-46c7-b190-33d50af45c8c: Home # Home
+    c7075ff2-22ea-4848-a584-0ffe6d2ac419: pollyedwardsmusic # pollyedwardsmusic
+    d2beb882-0ee5-4c50-925d-14cff94304fe: Home # Home
+    f83d477d-6234-463c-a868-ce0164a018bc: 'Polly Edwards Music' # Polly Edwards Music
+    faff8b18-84ef-4767-a27d-3debd81f5dcf: Introduction # Introduction
+system:
+  edition: solo
+  live: true
+  name: 'Polly Edwards Music'
+  retryDuration: null
+  schemaVersion: 4.5.3.0
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

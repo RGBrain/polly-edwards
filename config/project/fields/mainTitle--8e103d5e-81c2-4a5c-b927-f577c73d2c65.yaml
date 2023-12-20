@@ -1,0 +1,19 @@
+columnSuffix: bsemfdok
+contentColumnType: text
+fieldGroup: 40781a1b-9971-494e-81b3-2989d8e1cbc6 # Common
+handle: mainTitle
+instructions: 'Main title'
+name: Title
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: true
+  placeholder: 'Polly Edwards'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

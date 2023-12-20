@@ -1,0 +1,19 @@
+.breadcrumbs {
+    @extend %list-reset;
+    
+    margin-block: map-get($spacers, 3);
+    display: none;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+
+    @include media-breakpoint-up(md) {
+        display: flex;
+    }
+
+    &__item {
+        @include fluid-type(sm, lg, 14px, 16px);
+
+        list-style-type: none;
+    }
+}

@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: home
+name: Home
+propagationMethod: all
+siteSettings:
+  f83d477d-6234-463c-a868-ce0164a018bc: # Polly Edwards Music
+    enabledByDefault: true
+    hasUrls: true
+    template: index.html
+    uriFormat: __home__
+type: single

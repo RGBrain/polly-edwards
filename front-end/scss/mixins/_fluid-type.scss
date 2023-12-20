@@ -1,0 +1,28 @@
+@mixin fluid-type($min-breakpoint, $max-breakpoint, $min-font-size, $max-font-size, $important: "false") {
+    $min-vw: map-get($grid-breakpoints, $min-breakpoint);
+    $max-vw: map-get($grid-breakpoints, $max-breakpoint);
+
+    & {
+        @if $important == "true" {
+            font-size: $min-font-size !important;
+
+            @media screen and (min-width: $min-vw) {
+                font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)})) !important;
+            }
+    
+            @media screen and (min-width: $max-vw) {
+                font-size: $max-font-size !important;
+            }
+        } @else {
+            font-size: $min-font-size;
+
+            @media screen and (min-width: $min-vw) {
+                font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+            }
+    
+            @media screen and (min-width: $max-vw) {
+                font-size: $max-font-size;
+            }
+        }
+    }
+}
