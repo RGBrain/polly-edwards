@@ -7,26 +7,56 @@
     <link rel="stylesheet" href="/assets/css/app.css">
 </head>
 
-<body>
-        <div class="d-flex justify-content-center gap-4 p-3">
-            <a class="text-grey-400"  href="#">{% include "svg/facebook.svg" %}</a>
-            <a class="text-grey-400" href="#">{% include "svg/youtube.svg" %}</a>
-            <a class="text-grey-400" href="#">{% include "svg/tiktok.svg" %}</a>
-            <a class="text-grey-400" href="#">{% include "svg/instagram.svg" %}</a>
+<body style="height: 10000px">
+        <div class="bg-image">
+            <!-- Image 1 -->
+            <div style="background-image: url({{entry.image1.one().getUrl()}});" class="bg-image__background"></div>
+
+            <div class="bg-image__content">
+                <div class="d-flex justify-content-center gap-4 p-3">
+                    <a class="text-grey-400"  href="#">{% include "svg/facebook.svg" %}</a>
+                    <a class="text-grey-400" href="#">{% include "svg/youtube.svg" %}</a>
+                    <a class="text-grey-400" href="#">{% include "svg/tiktok.svg" %}</a>
+                    <a class="text-grey-400" href="#">{% include "svg/instagram.svg" %}</a>
+                </div>
+                
+                <h1 class="d-flex justify-content-center">{{entry.mainTitle}}</h1>
+                
+                <h4 class="d-flex justify-content-center">{{entry.introduction}}</h4>
+            </div>
+
         </div>
 
 
-        <div class="about"></div>
-        <div class="about"></div>
-        
-        
-        <h1 class="home justify-content-center">{{entry.mainTitle}}</h1>
+        <!-- About us -->
+        <div class="bg-grey-200">
+            <div class="container-lg rellax">
+                <h5>{{entry.about}}</h5>
+            </div>
+        </div>
 
-        <h4 class="home">{{entry.introduction}}</h4>
-        
+        <!-- YouTube video player -->
+        <div class="bg-grey-200">
+            <div class="container-lg">
+                <h5>YouTube Video Embed</h5>
+            </div>
+        </div>
+
+        <!-- Contact Us Form -->
+        <div class="bg-grey-200">
+            <div class="container-lg">
+                <h5>Contact Us Form</h5>
+            </div>
+        </div>
 
         <!-- ! Remove before build -->
     <div class="breakpoint-helper"></div>
+
+    <script>
+        import Rellax from "rellax";
+        // Accepts any class name
+        var rellax = new Rellax('.rellax');
+      </script> 
 </body>
 
 </html>
