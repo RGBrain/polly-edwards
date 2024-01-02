@@ -1,4 +1,4 @@
-dateModified: 1703088736
+dateModified: 1704195122
 email:
   fromEmail: richard.brain@hotmail.co.uk
   fromName: pollyedwardsmusic
@@ -16,11 +16,14 @@ meta:
     0f083752-82c6-4c21-9c00-b77ab36ee8f8: About # About
     8e103d5e-81c2-4a5c-b927-f577c73d2c65: Title # Title
     9bd49ff0-ea27-4627-a6cb-6fc2a8e361ea: assets # assets
+    58ac0044-d9cc-4267-bc73-a897c2f23f26: 'image 2' # image 2
     28901fa8-0b6c-48af-a81f-030a2295d015: 'Image 1' # Image 1
     40781a1b-9971-494e-81b3-2989d8e1cbc6: Common # Common
     882429fd-ddb0-46c7-b190-33d50af45c8c: Home # Home
+    a0b2a2f7-c3ac-4400-bf5d-ef0d30249aa7: image3 # image3
     c7075ff2-22ea-4848-a584-0ffe6d2ac419: pollyedwardsmusic # pollyedwardsmusic
     d2beb882-0ee5-4c50-925d-14cff94304fe: Home # Home
+    f7ca0d0b-db34-4aae-b04d-bc329857bbe5: 'Image 2' # Image 2
     f83d477d-6234-463c-a868-ce0164a018bc: 'Polly Edwards Music' # Polly Edwards Music
     faff8b18-84ef-4767-a27d-3debd81f5dcf: Introduction # Introduction
 system:

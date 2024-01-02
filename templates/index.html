@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{siteName}} | {{entry.title}}</title>
-    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="stylesheet" href="/assets/css/app.css?{{ craft.app.config.custom.assetVersion }}" media="all">
+ 
 </head>
 
-<body style="height: 10000px">
+<body >
+        <!-- Background image 1 -->
         <div class="bg-image">
-            <!-- Image 1 -->
             <div style="background-image: url({{entry.image1.one().getUrl()}});" class="bg-image__background"></div>
 
             <div class="bg-image__content">
@@ -20,43 +21,74 @@
                     <a class="text-grey-400" href="#">{% include "svg/instagram.svg" %}</a>
                 </div>
                 
-                <h1 class="d-flex justify-content-center">{{entry.mainTitle}}</h1>
+                <h1 class="text-orange d-flex justify-content-center">{{entry.mainTitle}}</h1>
                 
-                <h4 class="d-flex justify-content-center">{{entry.introduction}}</h4>
+                <h3 class="d-flex justify-content-center">{{entry.introduction}}</h3>
             </div>
 
         </div>
 
-
         <!-- About us -->
-        <div class="bg-grey-200 rellax">
-            <div class="container-lg rellax" data-rellax-speed="7">
-                <h5>{{entry.about}}</h5>
+        <div class="mt-1 pt-4 p-3 rellax bg-orange" data-module="rellax" data-rellax-speed="3">
+            <div class="container-lg">
+                <h3>{{entry.about}}</h3>
+            </div>
+        </div>
+
+        <!-- Background image 2 -->
+        <div class="bg-image rellax mt-1 mb-4" data-module="rellax" data-rellax-speed="4">
+            <div style="background-image: url({{entry.image2.one().getUrl()}});" class="bg-image__background bg-image__background--2"></div>
+        </div>
+
+        <!-- About us 2 -->
+        <div class="p-3 mt-5 mb-5 rellax bg-orange" data-module="rellax" data-rellax-speed="5">
+            <div class="container-lg">
+                <h3>{{entry.about}}</h3>
             </div>
         </div>
 
         <!-- YouTube video player -->
-        <div class="bg-grey-200">
+        <div class="rellax mt-5" data-module="rellax" data-rellax-speed="5">
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/K6l0MFksNEE?si=TpW8lOQvtpRjq789" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+        </div>
+
+        <!-- About us 3 -->
+        <div class="p-3 mt-0 mb-5 rellax bg-orange" data-module="rellax" data-rellax-speed="6">
             <div class="container-lg">
-                <h5>YouTube Video Embed</h5>
+                <h3>{{entry.about}}</h3>
             </div>
         </div>
 
+        <!-- Background image 3 -->
+        <div class="bg-image__image3">
+            <div style="background-image: url({{entry.image3.one().getUrl()}});" class="bg-image__background"></div>
+        </div>
+
         <!-- Contact Us Form -->
-        <div class="bg-grey-200">
-            <div class="container-lg">
-                <h5>Contact Us Form</h5>
-            </div>
+        <div class="contact p-3">
+            <h3 class="contact__heading">Get in touch</h3>
+            <form>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Name</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Tina Turner">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Message</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+              </form>
         </div>
 
         <!-- ! Remove before build -->
     <div class="breakpoint-helper"></div>
 
-    <script>
-        import Rellax from "rellax";
-        // Accepts any class name
-        var rellax = new Rellax('.rellax');
-      </script> 
+    <script src="/assets/js/bundle.js?{{ craft.app.config.custom.assetVersion }}"></script>
 </body>
 
 </html>

@@ -12,6 +12,11 @@
             background-position: 85% right;
         }
 
+        &--2 {
+            background-position: top;
+            height: 90vh;
+            z-index: -2;
+        }
     }
 
     &__content {
@@ -20,4 +25,5 @@
         left: 0;
         width: 100vw;
     }
+
 }

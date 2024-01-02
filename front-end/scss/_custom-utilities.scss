@@ -27,6 +27,7 @@ $utilities: map-merge(
                     "purple-opacity": $purple-opacity,
                     "grey-100": $grey-100,
                     "grey-200": $grey-200,
+                    "orange": $orange,
                 )
             )
         ),
@@ -78,6 +79,7 @@ $utilities: map-merge(
                                 "grey-100": $grey-100,
                                 "grey-200": $grey-200,
                                 "grey-400": $grey-400,
+                                "orange": $orange,
                             )
                         ),
                 )
@@ -179,6 +181,7 @@ $custom-colors: (
     "grey-100": $grey-100,
     "grey-200": $grey-200,
     "grey-400": $grey-400,
+    "orange": $orange
 );
 
 // Merge custom colours into theme colours

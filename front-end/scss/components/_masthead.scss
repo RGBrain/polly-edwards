@@ -1,0 +1,4 @@
+h1 {
+    @include fluid-type(sm, xxl, 50px, 90px);
+    color: orange;
+}
